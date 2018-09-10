@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Compra de motocicletas</title>
+  </head>
+  <body>
+    <h1>Bienvenido a Motolandia. Estás a un paso de tener un nuevo vehículo</h1>
+    <br>
+    <h2>Por favor, llena este formulario para concretar la venta de la motocicleta</h2>
+  </body>
+</html>
