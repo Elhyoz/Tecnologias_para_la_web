@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Compra de motocicletas</title>
   </head>
+
   <body>
-    <h1>Bienvenido a Motolandia. Estás a un paso de tener un nuevo vehículo</h1>
-    <br>
-    <h2>Por favor, llena este formulario para concretar la venta de la motocicleta</h2>
-    <br><br>
-    <label for="tname">Titular</label>
-    <input type="text" name="tname" placeholder="Pedro Gómez" required>
-    <br><br>
-    <label for="acreditation">Acreditación del titular</label>
-    <input type="checkbox" name="acreditation">
+    <form class="moto-form" action="ejemplo.php" method="get">
+
+      <div class="content-body">
+
+        <h1>Bienvenido a Motolandia. Estás a un paso de tener un nuevo vehículo.</h1>
+        <br>
+        <h2>Por favor, llena este formulario para concretar la venta de la motocicleta</h2>
+        <br><br>
+
+        <div class="titular-data">
+          <fieldset>
+            <legend><b>Datos del titular.</b></legend>
+
+            <label for="tname">Titular: </label>
+            <input type="text" name="tname" placeholder="Ej. Pedro Gómez" required><br><br>
+
+            <label for="phone">Número de teléfono: </label>
+            <input type="number" name="phone" placeholder="Ej. 5567890012">
+
+
+
+        </fieldset>
+
+
+        </div>
+
+        <br><br>
+        <div class="titular-acreditation">
+
+          <fieldset>
+            <legend><b>Acreditación del titular</b></legend>
+
+            <label for="DNI">Identificación oficial: </label>
+            <input type="radio" id="dni" value="dni_check"><br><br>
+
+            <label for="dv-license">Permiso para conducir válido: </label>
+            <input type="radio" id="dv" value="dv-license-valid"><br><br>
+
+            <label for="legal-statement">Comprobante del estado legal de la motocicleta: </label>
+            <input type="radio" name="" value="checked">
+
+          </fieldset>
+        </div>
+      </div>
+    </form>
   </body>
 </html>

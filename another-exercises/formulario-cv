@@ -7,73 +7,109 @@
   </head>
 
   <body>
-  <form action="ejemplo.php" method="get">
-    <div id="personal">
-      <fieldset>
-        <legend><b>Datos personales</b></legend>
-        Nombre: <input type="text" name="nombre" value="" size="20" maxlength="30"/><br><br>
-          Apellidos:<input type="text" name="apellidos" value="" size="20" maxlength="30"/><br><br>
-
-        <label for="gender">Sexo:</label>
-        <input type="radio" name="hm" value="h"> Hombre
-        <input type="radio" name="hm" value="m"> Mujer
-        <br><br>
-
-        <label for="birthday">Fecha de nacimiento:</label>
-        <input type="date" name="dianac"  size="10"/><br><br>
-
-        <label for="email">Correo Electronico:</label>
-        <input type="text" name="nombre" value="" size="20" maxlength="30" /><br><br>
-
-        <label for="phone-number">Telefono: </label>
-        <input type="number" name="tel" value="" size="20" maxlength="10"/><br><br>
-
-              Dirección Completa: <input type="text" name="dir" value="" size="50" maxlength="50"/>
-
-
-
-        </fieldset>
-    </div>
-    <div id="academicos">
-
-      <fieldset>
-        <legend><b>Datos académicos</b></legend>
-        Instituto: <input type="number" name="tel" value="" size="20" maxlength="10"/>
-        Titulo Obtenido: <input type="number" name="tel" value="" size="20" maxlength="10"/>
-        <br><br>
-
-        </fieldset>
-
-      <div class="laboral-experience">
+    <form action="ejemplo.php" method="get">
+      <div id="personal">
         <fieldset>
-          <legend>Experiencia laboral</legend>
-          <p>
-            Puesto que ocupó: <input type="text" name="last-job" id="experience" placeholder="Ej. Director ejecutivo">
+          <legend><b>Datos personales</b></legend>
+          Nombre: <input type="text" name="nombre" value="" size="20" maxlength="30"/><br><br>
+            Apellidos:<input type="text" name="apellidos" value="" size="20" maxlength="30"/><br><br>
 
-          </p>
-          <br>
-          <p>
-            Duración del puesto:
-            <br>
-            De: <input type="date" name="dianac" size="10"> a: <input type="date" name="dianac" size="10">
+          <label for="gender">Sexo:</label>
+          <input type="radio" name="hm" value="h"> Hombre
+          <input type="radio" name="hm" value="m"> Mujer
+          <br><br>
 
-          </p>
-          <br>
-          <p>
-            Motivo de abandono: <input type="text" name="leave-job" placeholder="Ej. Estrés">
+          <label for="birthday">Fecha de nacimiento:</label>
+          <input type="date" name="dianac"  size="10"/><br><br>
 
-          </p>
-        </fieldset>
+          <label for="email">Correo Electrónico:</label>
+          <input type="text" name="nombre" value="" size="20" maxlength="30" /><br><br>
+
+          <label for="phone-number">Teléfono: </label>
+          <input type="number" name="tel" value="" size="20" maxlength="10"/><br><br>
+
+                Dirección Completa: <input type="text" name="dir" value="" size="50" maxlength="50"/>
+
+
+
+
+
+
+
+          </fieldset>
       </div>
+      <div id="academicos">
+
+        <fieldset>
+          <legend><b>Datos académicos</b></legend>
+          Instituto: <input type="number" name="tel" value="" size="20" maxlength="10"/>
+          Título Obtenido: <input type="number" name="tel" value="" size="20" maxlength="10"/>
+          <br><br>
+
+
+
+          </fieldset>
+
+        <div class="laboral-experience">
+          <fieldset>
+            <legend>Experiencia laboral</legend>
+            <p>
+              Puesto que ocupó: <input type="text" name="last-job" id="experience" placeholder="Ej. Director ejecutivo">
+
+            </p>
+            <br>
+            <p>
+              Duración del puesto:
+              <br>
+              De: <input type="date" name="dianac" size="10"> a: <input type="date" name="dianac" size="10">
+
+            </p>
+            <br>
+            <p>
+              Motivo de abandono: <input type="text" name="leave-job" placeholder="Ej. Estrés">
+
+            </p>
+
+            <p>
+              Puesto que ocupó: <input type="text" name="last-job" id="experience" placeholder="Ej. Director ejecutivo">
+
+            </p>
+            <br>
+            <p>
+              Duración del puesto:
+              <br>
+              De: <input type="date" name="dianac" size="10"> a: <input type="date" name="dianac" size="10">
+
+            </p>
+            <br>
+            <p>
+              Motivo de abandono: <input type="text" name="leave-job" placeholder="Ej. Estrés">
+
+            </p>
+
+            <p>
+              Puesto que ocupó: <input type="text" name="last-job" id="experience" placeholder="Ej. Director ejecutivo">
+
+            </p>
+            <br>
+            <p>
+              Duración del puesto:
+              <br>
+              De: <input type="date" name="dianac" size="10"> a: <input type="date" name="dianac" size="10">
+
+            </p>
+            <br>
+            <p>
+              Motivo de abandono: <input type="text" name="leave-job" placeholder="Ej. Estrés">
+
+            </p>
+          </fieldset>
+        </div>
         <input type="submit" value="Enviar" />
         <input type="reset" value="Borrar" />
 
+      </div>
 
-
-        </p>
-    </div>
-
-  </form>
-</body>
-
+    </form>
+  </body>
 </html>
