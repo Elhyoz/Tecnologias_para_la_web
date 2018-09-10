@@ -8,5 +8,11 @@
     <h1>Bienvenido a Motolandia. Estás a un paso de tener un nuevo vehículo</h1>
     <br>
     <h2>Por favor, llena este formulario para concretar la venta de la motocicleta</h2>
+    <br><br>
+    <label for="tname">Titular</label>
+    <input type="text" name="tname" placeholder="Pedro Gómez" required>
+    <br><br>
+    <label for="acreditation">Acreditación del titular</label>
+    <input type="checkbox" name="acreditation">
   </body>
 </html>

@@ -7,53 +7,73 @@
   </head>
 
   <body>
-    <form action="ejemplo.php" method="get">
-      <div id="personal">
-        <h3>Datos Personales</h3>
-        Nombre: <input type="text" name="nombre" value="" size="20" maxlength="30"/><br>
-      Apellidos:<input type="text" name="apellidos" value="" size="20" maxlength="30"/><br>
-      Sexo:
+  <form action="ejemplo.php" method="get">
+    <div id="personal">
+      <fieldset>
+        <legend><b>Datos personales</b></legend>
+        Nombre: <input type="text" name="nombre" value="" size="20" maxlength="30"/><br><br>
+          Apellidos:<input type="text" name="apellidos" value="" size="20" maxlength="30"/><br><br>
+
+        <label for="gender">Sexo:</label>
         <input type="radio" name="hm" value="h"> Hombre
         <input type="radio" name="hm" value="m"> Mujer
+        <br><br>
 
-    </p>
-        <p>
-          Fecha de nacimiento: <input type="date" name="dianac"  size="10"/>
-          <p>
-            Correo Electronico:<input type="text" name="nombre" value="" size="20" maxlength="30" /><br>
-      Telefono: <input type="number" name="tel" value="" size="20" maxlength="10"/>
-      Dirección Completa: <input type="text" name="dir" value="" size="50" maxlength="50"/>
+        <label for="birthday">Fecha de nacimiento:</label>
+        <input type="date" name="dianac"  size="10"/><br><br>
 
+        <label for="email">Correo Electronico:</label>
+        <input type="text" name="nombre" value="" size="20" maxlength="30" /><br><br>
+
+        <label for="phone-number">Telefono: </label>
+        <input type="number" name="tel" value="" size="20" maxlength="10"/><br><br>
+
+              Dirección Completa: <input type="text" name="dir" value="" size="50" maxlength="50"/>
+
+
+
+        </fieldset>
     </div>
-      <div id="academicos">
-        <h3>Datos Academicos</h3>
+    <div id="academicos">
+
+      <fieldset>
+        <legend><b>Datos académicos</b></legend>
         Instituto: <input type="number" name="tel" value="" size="20" maxlength="10"/>
-      Titulo Obtenido: <input type="number" name="tel" value="" size="20" maxlength="10"/>
-      <br>
-      <h3>
-        Experiencia laboral
-      </h3>
-      <p>
-        Puesto que ocupó: <input type="text" name="last-job" id="experience" placeholder="Ej. Director ejecutivo">
-      </p>
-      <br>
-      <p>
-        Duración del puesto:
-        <br>
-        De: <input type="date" name="dianac" size="10"> a: <input type="date" name="dianac" size="10">
-      </p>
-      <br>
-      <p>
-        Motivo de abandono: <input type="text" name="leave-job" placeholder="Ej. Estrés">
-      </p>
+        Titulo Obtenido: <input type="number" name="tel" value="" size="20" maxlength="10"/>
+        <br><br>
 
-    </div>
-      <p>
+        </fieldset>
+
+      <div class="laboral-experience">
+        <fieldset>
+          <legend>Experiencia laboral</legend>
+          <p>
+            Puesto que ocupó: <input type="text" name="last-job" id="experience" placeholder="Ej. Director ejecutivo">
+
+          </p>
+          <br>
+          <p>
+            Duración del puesto:
+            <br>
+            De: <input type="date" name="dianac" size="10"> a: <input type="date" name="dianac" size="10">
+
+          </p>
+          <br>
+          <p>
+            Motivo de abandono: <input type="text" name="leave-job" placeholder="Ej. Estrés">
+
+          </p>
+        </fieldset>
+      </div>
         <input type="submit" value="Enviar" />
         <input type="reset" value="Borrar" />
 
-    </p>
-    </form>
-  </body>
+
+
+        </p>
+    </div>
+
+  </form>
+</body>
 
 </html>
