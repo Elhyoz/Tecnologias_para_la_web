@@ -24,18 +24,14 @@
             <input type="text" name="tname" placeholder="Ej. Pedro Gómez" required><br><br>
 
             <label for="phone">Número de teléfono: </label>
-            <input type="number" name="phone" placeholder="Ej. 5567890012">
+            <input type="number" name="phone" placeholder="Ej. 5567890012" required>
 
-
-
-        </fieldset>
-
-
+            <label for="email">Correo electrónico: </label>
+            <input type="text" placeholder="algo@correo.com"><br><br>
+          </fieldset>
         </div>
 
-        <br><br>
         <div class="titular-acreditation">
-
           <fieldset>
             <legend><b>Acreditación del titular</b></legend>
 
@@ -45,11 +41,34 @@
             <label for="dv-license">Permiso para conducir válido: </label>
             <input type="radio" id="dv" value="dv-license-valid"><br><br>
 
-            <label for="legal-statement">Comprobante del estado legal de la motocicleta: </label>
-            <input type="radio" name="" value="checked">
-
+            <label for="c-card">Tarjeta de circulación: </label>
+            <input type="radio" name="c-card-check">
           </fieldset>
         </div>
+
+        <div class="vehicle-acreditation">
+          <fieldset>
+            <legend><b>Acreditación del vehículo</b></legend>
+
+            <label for="taxes">Verificación y tenencia del año corriente</label>
+            <input type="checkbox" name="tax"><br><br>
+
+            <label for="general-adjustment">Afinación y balanceo</label>
+            <input type="checkbox" name="gadj"><br><br>
+
+            <label for="legal-statement">Comprobante del estado legal de la motocicleta: </label>
+            <input type="checkbox" name="" value="checked"><br><br>
+
+            <label for="vin-verification">Verificación del VIN: </label>
+            <input type="checkbox" name="vin-check"><br><br>
+          </fieldset>
+        </div>
+
+        <div>
+          <input type="submit" name="send" value="Enviar">
+          <input type="reset" name="delete" value="Borrar">
+        </div>
+
       </div>
     </form>
   </body>
