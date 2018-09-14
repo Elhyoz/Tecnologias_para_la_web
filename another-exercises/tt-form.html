@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Formularios-TT</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <h1 align="center">Trabajo Terminal</h1>
+</head>
+
+<body>
+  <fieldset>
+    <fieldset>
+      <legend><h2>Solicitud de inscripción de TT.</h2>
+      </legend> <br>
+			Nombre: <input type="text" name="nombre" placeholder="Ingresa tu nombre"> <br><br>
+			Apellidos: <input type="text" name="apellidos" placeholder="Ingresa tus apellidos"> <br><br>
+			Boleta: <input type="text" placeholder="2018123456789"required> <br><br>
+			Correo: <input type="email" placeholder="ejemplo@correo.com"required> <br><br>
+			¿Cuentas con materias desfasadas?
+			Sí:<input type="checkbox" name="estadoDesfasado" id="estadoDesfasado" value="siDesfasado">
+			No:<input type="checkbox" name="estadoDesfasado" id="estadoDesfasado" value="noDesfasado"> <br><br>
+			Comentarios adicionales: <br>
+      <textarea cols="50" rows="4" placeholder="Haz comentarios adicionales que consideres que pueden ser de utilidad."></textarea><br><br>
+      <input type="reset" value="restablecer valores" >
+      <input type="submit" value="solicitar inscripción"> <br>
+      <em> Una vez enviada la solicitada la inscipción favor de acudir dentro de 72 hrs al área de control escolar</em> <br><br><br><br>
+
+		</fieldset><br><br><br><br>
+
+    <fieldset>
+      <legend><h2>Remitir solicitud de inscripción a área de control escolar.</h2>
+      </legend>
+      <p>Favor de cargar su documento para que sea enviado al área correspondiente.</p>
+      <input type="file" name="solicitud"> <br><br>
+      <input type="submit" value="enviar solicitud"> <br><br><br><br>
+
+		</fieldset><br><br><br><br>
+
+    <fieldset>
+      <legend><h2>3.-Confirmar que tu hoja de inscripción corresponda con el grupo y maestros asignados</h3	></legend>
+
+			<p>¿El grupo corresponde con el que se te asignó?</p><br>
+			<select size="2">
+				<option name="checkGrupo" value="siGrupo"> Si </option><br>
+				<option name="checkGrupo" value="noGrupo"> No </option><br>
+			</select><br>
+			<p>¿El maestro corresponde con el que se te asignó?</p>
+			<select size="2">
+				<option> Si </option><br>
+				<option > No </option><br>
+			</select><br><br>
+			<input type="submit" value="Validar información"> <br>
+
+		</fieldset> <br><br><br><br>
+
+
+		<fieldset><legend><h2>Contactar a tu profesor asignado.</h3	></legend>
+
+			<textarea name="comentarios" cols="100" rows="10" placeholder="Pónte de acuerdo con tu profesor asignado."></textarea><br><br>
+			<input type="submit" value="Enviar comentarios"> <br>
+
+		</fieldset>
+		<input type="reset" value="Limpiar">
+	</fieldset>
+	</body>
+  <style media="screen">
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ff777c;
+    }
+  </style>
+</html>
