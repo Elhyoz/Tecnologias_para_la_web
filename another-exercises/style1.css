@@ -1,33 +1,21 @@
-/* ::-webkit-scrollbar{
-  scroll-3dlight-color:black;
-  scroll-arrow-color:red;
-  scroll-base-color:grey;
-  scroll-darkshadow-color:black;
-  scroll-face-color:green;
-  scroll-highlight-color:yellow;
-  scroll-shadow-color:green;
-  scroll-track-color:blue;
-
-
-} */
-/* width */
+/* Ancho de la scrollbar */
 ::-webkit-scrollbar {
-    width: 18px;
+    /* width: 18px; */
 }
 
-/* Track */
+/* Fondo de la scrollbar. El radio en 3D */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 10px;
     border-radius: 10px;
 }
 
-/* Handle */
+/* Circunferencia de los bordes */
 ::-webkit-scrollbar-thumb {
     background: #2152a0;
     border-radius: 10px;
 }
 
-/* Handle on hover */
+/* Cambio de color al posiciona el cursor */
 ::-webkit-scrollbar-thumb:hover {
     background: black;
 }
