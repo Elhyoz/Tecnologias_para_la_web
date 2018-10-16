@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Adivinanzas chidas.</title>
+    <link rel="stylesheet" href="css/adivinanza.css">
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="ad1-container">
+        <h1>Adivina adivinador c:</h1>
+        <form class="riddle" method="post" action="">
+          <fieldset>
+            <legend>Acertijo 1. Complétalo para avanzar.</legend>
+            <p class="ad1">Un platito de avellanas que de día se recogen y de noche se desparraman</p>
+            R. <input type="text" name="answer">
+            <input type="button" name="submit" value="Enviar" id="send">
+          </fieldset>
+        </form>
+      </div>
+      <div class="ad2-container">
+
+      </div>
+    </div>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("input[type=button]").click(function() {
+        let answerStr = $("input[name=answer]").val();
+        answerStr = answerStr.toUpperCase();
+        if(answerStr == 'LAS ESTRELLAS' || answerStr == 'ESTRELLAS'){
+          alert("Correcto");
+          location.reload(true);
+          
+        }
+        else{
+          alert("Sigue intentando");
+          location.reload(true);
+        }
+      });
+    });
+  </script>
+</html>
